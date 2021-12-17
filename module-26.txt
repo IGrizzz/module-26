@@ -1,0 +1,57 @@
+1. Skiljek : one to one
+    {
+        id:"12345",
+       fname: "John Lenong",
+       email : "oneSlapMan@gmail.com",
+       phone : "088222122"
+    }
+
+
+2. Skilshop : one to many
+{
+     id:"12345",
+       fname: "John Lenong",
+       phone : "088222122",
+       address : ["tapanuli Tengah", "Tapanuli Selatan"]
+}
+
+
+
+3. Products : one to many
+{
+    id:"33",
+    produk :{
+        name: "Kaos Polos",
+        brand: "skilShirt"
+    },
+    variants: [
+        {
+            name:"Kaos Polos Hitam",
+            color: "hitam",
+            quantity : 12,
+            price: 99000,
+
+        },
+        {
+            name:"Kaos Polos Navy",
+            color: "navy",
+            quantity : 10,
+            price: 99000,
+
+        }
+    ]
+}
+
+4. Cinemas : many to many
+{
+    firstCinema : {
+        name: "CGF",
+        films : ["Venom 2", "Spiderman No Way Home"],
+        location : "Pondok Indah"
+    },
+    secondCinema : {
+        name: "Cinema31",
+        films : ["Venom 2", "Spiderman No Way Home"],
+        location : "Mall Kelapa Gading"
+    }
+}
